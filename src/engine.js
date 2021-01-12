@@ -1,3 +1,5 @@
+import App from "./components/App"
+ 
 function createResult(emotion, color) {
   if(emotion === 'Joy'){
     if(color === 'yellow'){
@@ -207,6 +209,7 @@ function createResult(emotion, color) {
       alert('you feel now Anticipated')
     }
   }
+   
 }
 
 

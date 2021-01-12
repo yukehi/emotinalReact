@@ -3,17 +3,18 @@ import Btn from './Btn';
 
 
 
-function From(p) {
+function From(props) {
     function select(e){
         const cliked = e.target.id;
-        p.onSelect(cliked);
+        props.onSelect(cliked);
     }
 
-    const btnList = p.btnSum;
+    const btnStyle = 'btn'
+    const btnList = props.btnSum;
     // console.log(btnList);
-    
-    return <div>
-    {btnList.map(item => <Btn title={item.title} />)} 
+    const btnSlected = btnList.map((btn) => {return <Btn  onClick={select} id={btn} class={props.class} BtnTitle={btn} />})
+    return <div> 
+        {btnSlected}
     </div>
             
 }

@@ -4,12 +4,12 @@ import Contant from "./Elemants/Contant";
 
 
 
-function Top() {
+function Hader() {
     return <div className='top'>
-    <HeadLine title="Hello world"/>
-    <Contant contant="This is a great world"/>
+    <HeadLine class='title' title="Emotional Calculator"/>
+    <Contant contant="Based on the research of Plutchik"/>
     
 </div>
 }
 
-export default Top;
+export default Hader;

@@ -39,18 +39,25 @@
    }
 
    .title {
-     font-size: 3rem;
+     font-size: 5rem;
      margin: 0 0 0 0;
    }
 
    .yelid {
-     font-size: 5rem;
+     font-size: 2.5rem;
      margin: 0 0 0 0;
      color: gold;
    }
+   .yelid2 {
+    font-size: 3.5rem;
+    margin: 0 0 0 0;
+    color: gold;
+  }
+
 
    .bold {
      color: mediumslateblue;
+     font-size: 5.5rem;
    }
 
    .btn {
@@ -62,6 +69,8 @@
      position: relative;
      display: inline-block;
      cursor: pointer;
+     outline: none;
+     border: none;
 
    }
 
@@ -71,39 +80,41 @@
    }
 
    .btn-size {
-     width: 20px;
+     width: 100px;
      height: 20px;
+     color: black;
+
    }
 
-   .red {
+   #red {
      background-color: red;
    }
 
-   .blue {
+   #blue {
      background-color: blue;
    }
 
-   .yellow {
+   #yellow {
      background-color: yellow;
    }
 
-   .orange {
+   #orange {
      background-color: orange;
    }
 
-   .green {
+   #green {
      background-color: green;
    }
 
-   .pink {
+   #pink {
      background-color: pink;
    }
 
-   .aqua {
+   #aqua {
      background-color: aqua;
    }
 
-   .lime {
+   #lime {
      background-color: lime;
    }
 
@@ -127,20 +138,23 @@
    }
 
    .img-happy {
-     right: 180px;
+     right: 1390px;
+     top:700px;
    }
 
    .img-love {
-     right: 230px;
+     right: 460px;
+     top:700px;
    }
 
    .img-angry {
-     left: 180px;
-
+     left: 580px;
+     top:320px;
    }
 
    .img-sad {
-     left: 130px;
+     left: 1230px;
+     top:320px;
 
    }
 

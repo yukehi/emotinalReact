@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import Btn from './Elemants/Btn'
-import Top from './Top'
-import Middle from './Middle'
-import Bottom from './Bottom'
-
-
+import Hader from './Hader'
+import EmotionForm from './EmotionForm'
+import ColorForm from './ColorForm'
+import Engine,{createResult} from '../engine'
+import Btn from './Elemants/Btn';
 
 function App() {
   const [emotion, setEmotion] = useState("");
@@ -12,18 +11,29 @@ function App() {
 
   const onEmotionSelect = (selectedEmotion) => {
     setEmotion(selectedEmotion);
+    
+    return 
   };
 
   const onColorSelect = (selectedColor) => {
     setColor(selectedColor);
+    
+    return 
   };
 
+  function reset(){
+    setColor('')
+    setEmotion('')
+  }
+
+  createResult(emotion,color)
+
   return (<>
-    <Top />
-    <Middle onEmotionSelect={onEmotionSelect}/>
-    <Bottom onColorSelect={onColorSelect} />
-    <p>emotion is: {emotion}</p>
-    <p>color is: {color}</p>
+    <Hader />
+    <EmotionForm onColorSelect={onColorSelect}/>
+    <ColorForm onEmotionSelect={onEmotionSelect}/>
+    <div className='answer'><Btn class='btn' BtnTitle='Reset' onClick={reset}/></div>
+    
   </>)
 }
 
